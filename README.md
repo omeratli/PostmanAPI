@@ -1,7 +1,13 @@
 # PostmanAPI
 
-2 farklı swagger api'ı üzerinde yapılan testlerde öne çıkan başlıklar;
+Used API's;
 
-1- Postman'de Get ve Post endpointlerinin başarılı kullanımı.
+https://generator.swagger.io/
 
-2- Tests alanından başarı kontrolü (responseCode.code === 200)
+https://petstore.swagger.io/
+
+## Featured titles in tests on 2 different swagger api;
+
+1- Successful use of Get and Post endpoints in Postman.
+
+2- Success check from the test area (responseCode.code === 200)
