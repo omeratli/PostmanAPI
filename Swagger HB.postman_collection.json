@@ -1,0 +1,192 @@
+{
+	"info": {
+		"_postman_id": "726a1a62-c6f7-4875-a729-a4ab9c5e2acb",
+		"name": "Swagger HB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://generator.swagger.io/api/gen/servers",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c6ba1cf5-ddbf-4f39-a89c-485ebfab9f5a",
+						"exec": [
+							"var data = JSON.parse(responseBody);\r",
+							"tests[\"Status code = 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/api/gen/servers/{{framework}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"gen",
+						"servers",
+						"{{framework}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://generator.swagger.io/api/gen/servers",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}gen/servers",
+					"host": [
+						"{{url}}gen"
+					],
+					"path": [
+						"servers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://petstore.swagger.io/v2/pet/findByStatus",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "3a4ecf2e-cb14-41bf-b00a-f15c0c25502f",
+						"exec": [
+							"var data = JSON.parse(responseBody);\r",
+							"tests[\"Status code = 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url2}}/v2/pet/findByStatus?status=available",
+					"host": [
+						"{{url2}}"
+					],
+					"path": [
+						"v2",
+						"pet",
+						"findByStatus"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "available"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://petstore.swagger.io/v2/pet",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c0b3c086-2800-4b0a-871e-77653d2e1a97",
+						"exec": [
+							"var data = JSON.parse(responseBody);\r",
+							"tests[\"Status code = 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url2}}/v2/pet/findByStatus?status=available",
+					"host": [
+						"{{url2}}"
+					],
+					"path": [
+						"v2",
+						"pet",
+						"findByStatus"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "available"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
